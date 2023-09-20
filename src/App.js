@@ -43,7 +43,7 @@ function App() {
   return (
     <div>
       <Header/>
-      <div className='grid grid-cols-2 gap-4 mt-12 items-center'>
+      <div className='grid grid-cols-2 gap-4 mt-2'>
         <LeftCard
         dateInput={dateInput}
         handleButton={handleButton}
@@ -51,7 +51,8 @@ function App() {
         />
         <RightCard
         data={data}
-        showImage={showImage}/>
+        showImage={showImage}
+        />
       </div>
 
     </div>

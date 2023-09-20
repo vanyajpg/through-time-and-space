@@ -2,8 +2,8 @@ import React from 'react'
 
 export default function LeftCard({dateInput, handleDateInputChange,handleButton}) {
   return (
-    <div>
-        <div className='border-2 p-4 m-12 bg-[#737484] hover:bg-[#d9d9de] bg-opacity-30 hover:bg-opacity-10 border-[#3a3a40] rounded shadow-lg hover:shadow-xl transition duration-300 text-[#eeeef0] h-1/2'>
+    <div className=' h-screen'>
+        <div className=' m-12 border-2 p-8 bg-[#737484] hover:bg-[#d9d9de] bg-opacity-30 hover:bg-opacity-10 border-[#3a3a40] rounded shadow-lg hover:shadow-xl transition duration-300 text-[#eeeef0] h-1/2'>
           <h3 className='text-center text-[#cddaea] text-3xl font-bold capitalize mt-4'>enter your date</h3>
           <div className='flex flex-col items-center space-y-16 mt-16'>
             <input 
