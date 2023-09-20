@@ -27,7 +27,7 @@ function App() {
 
   return (
     <div>
-      <h1>explore the universe</h1>
+      <h1 className='text-4xl text-blue-500'>explore the universe</h1>
       <h3>enter your date</h3>
 
       <input 
