@@ -2,17 +2,17 @@ import React from 'react'
 
 export default function LeftCard({dateInput, handleDateInputChange,handleButton}) {
   return (
-    <div className=' h-screen'>
-        <div className=' m-12 border-2 p-8 bg-[#737484] hover:bg-[#d9d9de] bg-opacity-30 hover:bg-opacity-10 border-[#3a3a40] rounded shadow-lg hover:shadow-xl transition duration-300 text-[#eeeef0] h-1/2'>
-          <h3 className='text-center text-[#cddaea] text-3xl font-bold capitalize mt-4'>enter your date</h3>
-          <div className='flex flex-col items-center space-y-16 mt-16'>
+    <div className='lg:h-screen border-2 border-purple-500 md:mt-12 sm:mt-12 flex items-start justify-center'>
+        <div className='lg:m-12 md:m-18 border-2 lg:border-red-500 md:border-green-500 sm:border-blue-500 p-8 bg-[#737484] hover:bg-[#d9d9de] bg-opacity-30 hover:bg-opacity-10 border-[#3a3a40] rounded shadow-lg hover:shadow-xl transition duration-300 text-[#eeeef0]  w-9/12 items-center justify-center'>
+          <h3 className='text-center text-[#cddaea] text-3xl font-bold capitalize my-4'>enter your date</h3>
+          <div className='flex flex-col items-center lg:space-y-4 mg:space-y-8 sm:space-y-4 border-2 border-yellow-500 mb-6'>
             <input 
               type ="date" 
               value={dateInput} 
               onChange={handleDateInputChange}
-              className="text-[#626eae] rounded w-1/2"
+              className="text-[#455a84] rounded w-1/2 sm:mt-4"
               />
-            <button onClick={handleButton} className="bg-[#cddaea] hover:bg-[#3b608e] text-[#35547e] hover:text-[#cddaea] transition duration-500 rounded w-1/3 h-12 ">explore</button>
+            <button onClick={handleButton} className="bg-[#cddaea] hover:bg-[#455a84] text-[#35547e] hover:text-[#cddaea] transition duration-500 rounded lg:w-24 md:w-24 sm:w-16 lg:h-10 md:h-10 sm:h-8 ">explore</button>
           </div>
         </div>
     </div>
