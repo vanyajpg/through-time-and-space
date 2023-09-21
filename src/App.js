@@ -29,7 +29,7 @@ function App() {
   return (
     <div>
       <Header/>
-      <div className='lg:grid lg:grid-cols-2 lg:gap-4 lg:mt-2'>
+      <div className='lg:grid lg:grid-cols-2 lg:gap-4 lg:m-8'>
         <LeftCard
         dateInput={dateInput}
         handleDateInputChange={handleDateInputChange}
