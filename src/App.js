@@ -7,7 +7,6 @@ import RightCard from './RightCard';
 function App() {
   const [data, setData] = useState(null)
   const [dateInput, setDateInput] = useState('2023-01-01')
-  const [showDate, setShowDate] = useState(false)
   const [showImage, setShowImage] = useState(true)
 
   useEffect(() => {
@@ -15,7 +14,6 @@ function App() {
     .then(res => res.json())
     .then(data => {
       setData(data)
-      setShowDate(true)
     })
       .catch((error) => {
         console.error('Error fetching data:', error);
@@ -24,7 +22,6 @@ function App() {
 
   function handleDateInputChange(event){
     setDateInput(event.target.value)
-    setShowDate(false)
   }
 
   function handleButton() {
@@ -32,7 +29,6 @@ function App() {
       .then(res => res.json())
       .then(data => {
         setData(data);
-        setShowDate(true);
         setShowImage(true);
       })
       .catch((error) => {
