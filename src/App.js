@@ -14,6 +14,7 @@ function App() {
     .then(res => res.json())
     .then(data => {
       setData(data)
+      setShowImage(true)
     })
       .catch((error) => {
         console.error('Error fetching data:', error);
@@ -24,17 +25,6 @@ function App() {
     setDateInput(event.target.value)
   }
 
-  function handleButton() {
-    fetch(`https://api.nasa.gov/planetary/apod?api_key=OBTkyKhEQeHyGV3oObYAaObQSeu5Ig4BpuaNudlP&date=${dateInput}`)
-      .then(res => res.json())
-      .then(data => {
-        setData(data);
-        setShowImage(true);
-      })
-      .catch((error) => {
-        console.error('Error fetching data:', error);
-      });
-  }
 
   return (
     <div>
@@ -42,7 +32,6 @@ function App() {
       <div className='lg:grid lg:grid-cols-2 lg:gap-4 lg:mt-2'>
         <LeftCard
         dateInput={dateInput}
-        handleButton={handleButton}
         handleDateInputChange={handleDateInputChange}
         />
         <RightCard
