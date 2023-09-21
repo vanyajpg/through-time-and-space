@@ -20,7 +20,7 @@ export default function RightCard({data, showImage, showDate, dateInput}) {
                         <div> {showImage && (
                             <>
                             <img src={data.hdurl} alt="APOD"
-                                className=' mx-auto rounded w-full h-[500px] border-2 border-[#3a3a40] border-opacity-40 hover:border-opacity-60 shadow-md hover:shadow-2xl transition duration-500 ' />
+                                className=' mx-auto rounded w-full h-[500px] border-2 border-[#3a3a40] border-opacity-50 shadow-md hover:shadow-2xl transition duration-300 ' />
                             </>
                             )}
 
