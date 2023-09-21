@@ -27,8 +27,8 @@ export default function RightCard({data, showImage, showDate, dateInput}) {
                         </div> 
                         <br />
                         <br />
-                        <button className='bg-[#737484] hover:bg-[#d9d9de] bg-opacity-30 hover:bg-opacity-10 px-12 py-2  transition duration-300 mb-8 uppercase rounded-full font-semibold tracking-wider animate-pulse ' onClick={() => setFlip(!flip)}>
-                            Flip</button>
+                            <button className='text-lg bg-[#737484] hover:bg-[#d9d9de] bg-opacity-30 hover:bg-opacity-10 px-12 py-2 transition duration-300 mb-8 uppercase rounded-full font-semibold tracking-wider animate-pulse' onClick={() => setFlip(!flip)}>
+                                Flip</button>
                     </div>
                     <div className=''>
                         <div className=' w-full text-center'>
