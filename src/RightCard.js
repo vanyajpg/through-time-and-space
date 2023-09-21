@@ -6,8 +6,8 @@ export default function RightCard({data, showImage, showDate, dateInput}) {
         const [flip, setFlip] = useState(false);
 
   return (
-    <div className=' mt-12'>
-        <div className=' text-[#cddaea] mr-12'>
+    <div className='border-2 border-purple-500 mt-12 '>
+        <div className=' text-[#cddaea] m-12 p-4'>
           {data && (
             <ReactCardFlip isFlipped={flip}
                 flipDirection="vertical">
@@ -37,9 +37,9 @@ export default function RightCard({data, showImage, showDate, dateInput}) {
                 </h2>
                 )} */}
                     <div className=' w-full text-center'>
-                        <p className="flex-grow">{data.explanation}</p>
+                        <p className="text-lg">{data.explanation}</p>
                         <br />
-                        <button className=' bg-[#737484] hover:bg-[#d9d9de] bg-opacity-30 hover:bg-opacity-10 px-12 py-2 rounded transition duration-300' onClick={() => setFlip(!flip)}>
+                        <button className=' text-lg bg-[#737484] hover:bg-[#d9d9de] bg-opacity-30 hover:bg-opacity-10 px-12 py-2 rounded transition duration-300' onClick={() => setFlip(!flip)}>
                             Flip
                         </button>
                     </div>
