@@ -11,7 +11,7 @@ export default function RightCard({data, showImage, showDate, dateInput}) {
           {data && (
             <div>
                 <div>
-                    <h2 className='text-center text-3xl text-[#cddaea] font-semibold m-4'>{data.title}</h2> 
+                    <h2 className='text-center text-3xl text-[#cddaea] font-semibold m-4 transform hover:scale-110 transition duration-500 '>{data.title}</h2> 
                 </div>
                 
                 <ReactCardFlip isFlipped={flip}
