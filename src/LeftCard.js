@@ -12,7 +12,7 @@ export default function LeftCard({dateInput, handleDateInputChange,handleButton}
               onChange={handleDateInputChange}
               className="text-[#455a84] rounded w-1/2 mt-4 focus:outline-none focus:ring focus:border-[#3a3a40] focus:ring-[#3a3a40]"
               />
-            <button onClick={handleButton} className="text-sm font-semibold bg-[#cddaea] hover:bg-[#455a84] bg-opacity-75 hover:bg-opacity-75 text-[#35547e] hover:text-[#cddaea] transition duration-500 rounded lg:w-32 md:w-24 w-24 lg:h-12 md:h-10 h-12 capitalize  ">explore <br></br>the universe</button>
+            <button className="text-sm font-semibold bg-[#cddaea] hover:bg-[#455a84] bg-opacity-75 hover:bg-opacity-75 text-[#35547e] hover:text-[#cddaea] transition duration-500 rounded lg:w-32 md:w-24 w-16 lg:h-12 md:h-10 h-16 capitalize ">explore <br></br>the universe</button>
           </div>
         </div>
     </div>
