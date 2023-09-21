@@ -6,7 +6,7 @@ export default function RightCard({data, showImage, showDate, dateInput}) {
         const [flip, setFlip] = useState(false);
 
   return (
-    <div className='border-2 border-purple-500 mt-12 '>
+    <div className=' mt-12 '>
         <div className=' text-[#cddaea] m-12 p-4'>
           {data && (
             <ReactCardFlip isFlipped={flip}
